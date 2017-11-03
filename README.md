@@ -21,9 +21,10 @@
 
 ## IDEATION
 
-<img src="https://github.com/minheeson/OurMentorProject/blob/master/screenshots/app_structure_1.jpeg" width="400" />
+| <img src="https://github.com/minheeson/OurMentorProject/blob/master/screenshots/app_structure_1.jpeg" width="400" /> | <img src="https://github.com/minheeson/OurMentorProject/blob/master/screenshots/app_structure_2.jpeg" width="400" /> |
+| :--------------------------------------: | :--------------------------------------: |
 
-<img src="https://github.com/minheeson/OurMentorProject/blob/master/screenshots/app_structure_2.jpeg" width="400" />
+
 
 ##### 1) Mentor
 

@@ -1,4 +1,4 @@
-## TMON_Real-time Search Widget
+## 우리의 멘토 (OurMentor Project)
 
 ------
 
@@ -73,6 +73,14 @@
 * 매주 활동을 토대로 발표되는 랭킹과 레벨에 따라 주어지는 아이템
 * 활동을 통해 경험치를 받아 레벨도 올리고, 아이템도 모아보세요
 * 그리고 주간 왕 도전까지!
+
+---
+
+## RESULTS
+
+| <img src="https://github.com/minheeson/OurMentorProject/blob/master/screenshots/ourmentor_googleplay.png" width="500"/> |
+| :--------------------------------------: |
+| <img src="https://github.com/minheeson/OurMentorProject/blob/master/screenshots/ourmentor_panel.pdf" width="500"/> |
 
 
 

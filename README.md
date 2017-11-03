@@ -78,9 +78,9 @@
 
 ## RESULTS
 
-| <img src="https://github.com/minheeson/OurMentorProject/blob/master/screenshots/ourmentor_googleplay.png" width="500"/> |
+| <img src="https://github.com/minheeson/OurMentorProject/blob/master/screenshots/ourmentor_googleplay.png" width="800"/> |
 | :--------------------------------------: |
-| <img src="https://github.com/minheeson/OurMentorProject/blob/master/screenshots/ourmentor_panel.pdf" width="500"/> |
+| <img src="https://github.com/minheeson/OurMentorProject/blob/master/screenshots/ourmentor_panel.png" width="800"/> |
 
 
 

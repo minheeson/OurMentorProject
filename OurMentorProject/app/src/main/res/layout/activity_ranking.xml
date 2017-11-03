@@ -1,0 +1,280 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ranking_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/uprofile_nav_shadow">
+
+            <ImageView
+                android:id="@+id/ranking_navi_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/main_nav_btn_ham_n" />
+
+            <ImageView
+                android:id="@+id/ranking_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/ranking_navi_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ranking_nav_ranking" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="339dp"
+            android:layout_height="141dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:id="@+id/mentoKing_layout"
+            android:background="@drawable/main_cnt_img">
+
+            <TextView
+                android:id="@+id/mentoKing_textView_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="38dp"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="40dp"
+                android:text="멘토왕"
+                android:textColor="#ffffff"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/mentoKing_textView_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/mentoKing_textView_title"
+                android:layout_alignStart="@id/mentoKing_textView_title"
+                android:layout_below="@id/mentoKing_textView_title"
+                android:textColor="#ffffff"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/mentoKing_textView_hashTag01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/mentoKing_textView_name"
+                android:layout_alignStart="@+id/mentoKing_textView_name"
+                android:layout_below="@id/mentoKing_textView_name"
+                android:textColor="#ffffff"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/mentoKing_textView_hashTag02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/mentoKing_textView_hashTag01"
+                android:layout_toEndOf="@+id/mentoKing_textView_hashTag01"
+                android:layout_toRightOf="@+id/mentoKing_textView_hashTag01"
+                android:textColor="#ffffff"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/mentoKing_textView_hashTag03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/mentoKing_textView_hashTag02"
+                android:layout_toEndOf="@+id/mentoKing_textView_hashTag02"
+                android:layout_toRightOf="@+id/mentoKing_textView_hashTag02"
+                android:textColor="#ffffff"
+                android:textSize="13sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/mentoKing_img"
+                android:layout_width="118dp"
+                android:layout_height="118dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                android:paddingTop="16dp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="339dp"
+            android:layout_height="141dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:id="@+id/actKing_layout"
+            android:background="@drawable/main_cnt_img">
+
+            <TextView
+                android:id="@+id/actKing_textView_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="38dp"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="40dp"
+                android:text="활동왕"
+                android:textColor="#ffffff"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/actKing_textView_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/actKing_textView_title"
+                android:layout_alignStart="@id/actKing_textView_title"
+                android:layout_below="@id/actKing_textView_title"
+                android:textColor="#ffffff"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/actKing_textView_hashTag01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/actKing_textView_name"
+                android:layout_alignStart="@+id/actKing_textView_name"
+                android:layout_below="@id/actKing_textView_name"
+                android:textColor="#ffffff"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/actKing_textView_hashTag02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/actKing_textView_hashTag01"
+                android:layout_toEndOf="@+id/actKing_textView_hashTag01"
+                android:layout_toRightOf="@+id/actKing_textView_hashTag01"
+                android:textColor="#ffffff"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/actKing_textView_hashTag03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/actKing_textView_hashTag02"
+                android:layout_toEndOf="@+id/actKing_textView_hashTag02"
+                android:layout_toRightOf="@+id/actKing_textView_hashTag02"
+                android:textColor="#ffffff"
+                android:textSize="13sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/actKing_img"
+                android:layout_width="118dp"
+                android:layout_height="118dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                android:paddingTop="16dp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="339dp"
+            android:layout_height="141dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:id="@+id/levelKing_layout"
+            android:background="@drawable/main_cnt_img">
+
+            <TextView
+                android:id="@+id/levelKing_textView_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="38dp"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="40dp"
+                android:text="레벨왕"
+                android:textColor="#ffffff"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/levelKing_textView_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/levelKing_textView_title"
+                android:layout_alignStart="@id/levelKing_textView_title"
+                android:layout_below="@id/levelKing_textView_title"
+                android:textColor="#ffffff"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/levelKing_textView_hashTag01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/levelKing_textView_name"
+                android:layout_alignStart="@+id/levelKing_textView_name"
+                android:layout_below="@id/levelKing_textView_name"
+                android:textColor="#ffffff"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/levelKing_textView_hashTag02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/levelKing_textView_hashTag01"
+                android:layout_toEndOf="@+id/levelKing_textView_hashTag01"
+                android:layout_toRightOf="@+id/levelKing_textView_hashTag01"
+                android:textColor="#ffffff"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/levelKing_textView_hashTag03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/levelKing_textView_hashTag02"
+                android:layout_toEndOf="@+id/levelKing_textView_hashTag02"
+                android:layout_toRightOf="@+id/levelKing_textView_hashTag02"
+                android:textColor="#ffffff"
+                android:textSize="13sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/levelKing_img"
+                android:layout_width="118dp"
+                android:layout_height="118dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                android:paddingTop="16dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/ranking_navigation_container"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#ffffff"
+        >
+
+    </FrameLayout>
+</android.support.v4.widget.DrawerLayout>

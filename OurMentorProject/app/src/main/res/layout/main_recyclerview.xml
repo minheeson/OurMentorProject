@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/boardIcon"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:ems="18"
+        android:ellipsize="end"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:id="@+id/boardTitle"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/boardIcon"
+        android:layout_toEndOf="@id/boardIcon"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="#828282"
+        android:ems="20"
+        android:lines="2"
+        android:ellipsize="end"
+        android:id="@+id/boardContent"
+        android:layout_below="@id/boardIcon"
+        android:layout_alignLeft="@id/boardIcon"
+        android:layout_alignStart="@id/boardIcon"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="#228FC4"
+        android:id="@+id/boardHashTag01"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/boardContent"
+        android:layout_alignLeft="@id/boardContent"
+        android:layout_alignStart="@id/boardContent"
+        android:layout_marginTop="7dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="#228FC4"
+        android:id="@+id/boardHashTag02"
+        android:layout_marginLeft="10dp"
+        android:layout_alignBottom="@id/boardHashTag01"
+        android:layout_toRightOf="@id/boardHashTag01"
+        android:layout_marginTop="7dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="#228FC4"
+        android:id="@+id/boardHashTag03"
+        android:layout_marginLeft="10dp"
+        android:layout_alignBottom="@id/boardHashTag02"
+        android:layout_toRightOf="@id/boardHashTag02"
+        android:layout_marginTop="7dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="답변"
+        android:textSize="13sp"
+        android:textColor="#828282"
+        android:id="@+id/boardReply"
+        android:layout_below="@id/boardHashTag01"
+        android:layout_alignLeft="@id/boardHashTag01"
+        android:layout_alignStart="@id/boardHashTag01"
+        android:layout_marginTop="9dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/boardReplyNo"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/boardReply"
+        android:layout_alignTop="@id/boardReply"
+         />
+
+    <ImageView
+        android:id="@+id/board_line1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/main_list_part"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/boardReplyNo"
+        android:layout_alignTop="@id/boardReplyNo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="좋아요"
+        android:textSize="13sp"
+        android:textColor="#828282"
+        android:id="@+id/boardLike"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/board_line1"
+        android:layout_alignTop="@id/board_line1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/boardLikeNo"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/boardLike"
+        android:layout_alignTop="@id/boardLike"
+        />
+
+    <ImageView
+        android:id="@+id/board_line2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/main_list_part"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/boardLikeNo"
+        android:layout_alignTop="@id/boardLikeNo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/boardCategory"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/board_line2"
+        android:layout_alignTop="@id/board_line2"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" ,"
+        android:layout_toRightOf="@id/boardCategory"
+        android:layout_alignTop="@id/boardCategory"
+        android:id="@+id/boardComma" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/boardDetail_category"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/boardComma"
+        android:layout_alignTop="@id/boardCategory"
+        />
+
+    <ImageView
+        android:id="@+id/board_line3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/main_list_part"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/boardDetail_category"
+        android:layout_alignTop="@id/boardDetail_category"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/boardTime"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/board_line3"
+        android:layout_alignTop="@id/board_line3"
+        />
+
+    <ImageView
+        android:id="@+id/board_bottom_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/main_list_line"
+        android:layout_below="@id/boardReply"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"/>
+</RelativeLayout>

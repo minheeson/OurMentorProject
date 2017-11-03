@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/main_nav_shadow"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/chatting_room_navi_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/board_nav_btn_backspace" />
+
+        <TextView
+            android:id="@+id/chatting_room_main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:layout_alignTop="@+id/chatting_room_navi_btn"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chatting_room_settings"
+            android:src="@drawable/infoex_nav_more"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginRight="8dp" />
+
+
+    </RelativeLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/chatting_recyclerView"
+                android:background="#ffffff"
+                android:layout_weight="8" />
+
+
+    <LinearLayout
+        android:layout_below="@id/chatting_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:background="@drawable/chattingroom_send_back"
+
+        android:layout_weight="1">
+
+        <EditText
+            android:background="@drawable/chattingroom_input"
+            android:id="@+id/chattingroom_input"
+            android:layout_alignParentBottom="true"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="7" />
+
+        <Button
+            android:background="#228FC4"
+            android:text="전송"
+            android:textColor="#ffffff"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:id="@+id/chattingroom_send_btn"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+
+</LinearLayout>

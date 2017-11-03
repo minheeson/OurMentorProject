@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/chatting_drawer_layout">
+
+
+
+        <RelativeLayout
+            android:background="@drawable/items_nav_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chatting_navi_btn"
+                android:src="@drawable/chatting_nav_btn_ham_n"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="15dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chatting_navi_title"
+                android:src="@drawable/chatting_nav_chatting"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="115dp"
+                android:layout_toRightOf="@id/chatting_navi_btn"/>
+
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/chatting_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chatting_navi_btn"
+                app:tabTextColor="#000000"
+                app:tabSelectedTextColor="#228FC4"
+                android:fillViewport="false"></android.support.design.widget.TabLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/chatting_container"
+                android:layout_below="@+id/chatting_tab"></FrameLayout>
+
+        </RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/chatting_profile_container"></FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/chatting_navigation_container"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#ffffff">
+    </FrameLayout>
+</android.support.v4.widget.DrawerLayout>

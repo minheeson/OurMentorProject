@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="wrap_content"
+    android:background="#eeeeee">
+
+<RelativeLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#eeeeee">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:src="@drawable/ic_regit_user"
+        android:layout_width="57dp"
+        android:layout_height="57dp"
+        android:id="@+id/question_reply_circleImageView"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/question_reply_name"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="23dp"
+        android:layout_toRightOf="@id/question_reply_circleImageView"
+        android:background="#eeeeee"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/question_reply_content"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:layout_below="@+id/question_reply_circleImageView"
+        android:layout_alignLeft="@+id/question_reply_circleImageView"
+        android:layout_alignStart="@+id/question_reply_circleImageView"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="20dp"
+        android:background="#eeeeee"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/question_reply_line"
+        android:src="@drawable/infocomment_cnt_line"
+        android:layout_below="@id/question_reply_content"
+        android:layout_marginTop="10dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/question_reply_date"
+        android:textSize="15sp"
+        android:textColor="#828282"
+        android:layout_alignLeft="@+id/question_reply_name"
+        android:layout_alignStart="@+id/question_reply_name"
+        android:layout_marginTop="9dp"
+        android:layout_below="@id/question_reply_name"
+        android:background="#eeeeee"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adopt_imageView"
+        android:src="@drawable/qcomment_thumbup_n"
+        android:layout_toRightOf="@id/question_reply_name"
+        android:layout_alignBottom="@id/question_reply_name"
+        android:layout_marginLeft="15dp" />
+
+</RelativeLayout>
+
+</LinearLayout>
+
+

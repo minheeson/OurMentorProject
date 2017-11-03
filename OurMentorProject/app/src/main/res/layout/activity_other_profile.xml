@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/otherProfile_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffffff"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        >
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="@drawable/uprofile_nav_shadow">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/otherProfile_navi_btn"
+                android:src="@drawable/items_nav_btn_backspace"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="15dp" />
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/uprofile_nav_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/otherProfile_title"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="147dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:id="@+id/otherProfile_myImg"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="13dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/otherProfile_myName"
+                android:layout_below="@+id/otherProfile_myImg"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/otherProfile_myStateMsg"
+                android:layout_below="@id/otherProfile_myName"
+                android:layout_centerHorizontal="true" />
+
+            <LinearLayout
+                android:id="@+id/hashTag_layout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/otherProfile_myStateMsg"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:background="#ffffff"
+                    android:padding="10dp"
+                    android:textColor="#228FC4"
+                    android:textSize="13sp"
+                    android:textColorHint="#AAAAAA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/otherProfile_myHashTag01"
+                    android:gravity="center"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:background="#ffffff"
+                    android:padding="10dp"
+                    android:textColor="#228FC4"
+                    android:textSize="13sp"
+                    android:textColorHint="#AAAAAA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/otherProfile_myHashTag02"
+                    android:gravity="center"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:background="#ffffff"
+                    android:padding="10dp"
+                    android:textColor="#228FC4"
+                    android:textSize="13sp"
+                    android:textColorHint="#AAAAAA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/otherProfile_myHashTag03"
+                    android:gravity="center"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="218.67dp"
+                android:layout_height="wrap_content"
+                android:minWidth="164.67dp"
+                android:id="@+id/otherProfile_levelProgressBar"
+                android:progressDrawable="@drawable/custom_progressbar"
+                android:layout_below="@id/hashTag_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:indeterminate="false" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/otherProfile_levelFrom"
+                android:background="@drawable/uprofile_cnt_dia1"
+                android:layout_alignBottom="@+id/otherProfile_levelProgressBar"
+                android:layout_toLeftOf="@+id/otherProfile_levelProgressBar"
+                android:layout_toStartOf="@+id/otherProfile_levelProgressBar"
+                android:gravity="center"
+                android:autoText="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/otherProfile_levelTo"
+                android:background="@drawable/uprofile_cnt_dia1"
+                android:gravity="center"
+                android:layout_alignBottom="@+id/otherProfile_levelProgressBar"
+                android:layout_toRightOf="@+id/otherProfile_levelProgressBar"
+                android:layout_toEndOf="@+id/otherProfile_levelProgressBar" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="26dp"
+                android:id="@+id/otherProfile_goToItem"
+                android:layout_below="@+id/otherProfile_levelProgressBar"
+                android:layout_marginLeft="81dp"
+                android:layout_marginTop="21dp"
+                android:src="@drawable/uprofile_cnt_btn_items"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/otherProfile_line"
+                android:src="@drawable/main_btn_line"
+                android:layout_below="@id/otherProfile_goToItem"
+                android:layout_marginTop="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/otherProfile_myBehavior"
+                android:text="활동 내용"
+                android:textSize="12sp"
+                android:textColor="#228FC4"
+                android:layout_below="@id/otherProfile_line"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="10dp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/otherProfile_recyclerView"
+                android:layout_below="@id/otherProfile_myBehavior"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="15dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/oprofile_cnt_btn_mentor_n"
+                android:id="@+id/mentor_btn"
+                android:layout_alignTop="@+id/otherProfile_goToItem"
+                android:layout_toRightOf="@+id/otherProfile_goToItem"
+                android:layout_toEndOf="@+id/otherProfile_goToItem"
+                android:layout_marginLeft="36dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/otherProfile_navigation_container"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#ffffff">
+
+    </FrameLayout>
+</android.support.v4.widget.DrawerLayout>

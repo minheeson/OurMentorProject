@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/profile_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffffff"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@drawable/uprofile_nav_shadow">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_navi_btn"
+            android:src="@drawable/main_nav_btn_ham_n"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="15dp" />
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/uprofile_nav_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_title"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="147dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_settings"
+            android:src="@drawable/uprofile_nav_btn_settings"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginRight="14dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/profileSetting_myImg"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/profile_myName"
+            android:layout_below="@+id/profileSetting_myImg"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_myStateMsg"
+            android:layout_below="@id/profile_myName"
+            android:singleLine="true"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:id="@+id/hashTag_layout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_myStateMsg"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:background="#ffffff"
+                android:padding="10dp"
+                android:textColor="#228FC4"
+                android:textSize="13sp"
+                android:textColorHint="#AAAAAA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/profile_myHashTag01"
+                android:gravity="center"
+                android:layout_weight="1" />
+
+            <TextView
+                android:background="#ffffff"
+                android:padding="10dp"
+                android:textColor="#228FC4"
+                android:textSize="13sp"
+                android:textColorHint="#AAAAAA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/profile_myHashTag02"
+                android:gravity="center"
+                android:layout_weight="1" />
+
+            <TextView
+                android:background="#ffffff"
+                android:padding="10dp"
+                android:textColor="#228FC4"
+                android:textSize="13sp"
+                android:textColorHint="#AAAAAA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/profile_myHashTag03"
+                android:gravity="center"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="218.67dp"
+            android:layout_height="wrap_content"
+            android:minWidth="164.67dp"
+            android:id="@+id/profile_levelProgressBar"
+            android:progressDrawable="@drawable/custom_progressbar"
+            android:layout_below="@id/hashTag_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:indeterminate="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_levelFrom"
+            android:background="@drawable/uprofile_cnt_dia1"
+            android:layout_alignBottom="@+id/profile_levelProgressBar"
+            android:layout_toLeftOf="@+id/profile_levelProgressBar"
+            android:layout_toStartOf="@+id/profile_levelProgressBar"
+            android:gravity="center"
+            android:autoText="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_levelTo"
+            android:background="@drawable/uprofile_cnt_dia1"
+            android:gravity="center"
+            android:layout_alignBottom="@+id/profile_levelProgressBar"
+            android:layout_toRightOf="@+id/profile_levelProgressBar"
+            android:layout_toEndOf="@+id/profile_levelProgressBar" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="26dp"
+            android:id="@+id/profile_goToItem"
+            android:layout_below="@+id/profile_levelProgressBar"
+            android:layout_marginLeft="138dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/uprofile_cnt_btn_items"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_line"
+            android:src="@drawable/main_btn_line"
+            android:layout_below="@id/profile_goToItem"
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/profile_follow"
+            android:layout_below="@id/profile_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/followCircleImageView"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_regit_user"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/one"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:padding="0dp"
+                    android:textColor="#ffffff"
+                    android:id="@+id/apply_count_textView"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="3dp" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="멘토 요청"
+                    android:id="@+id/followTextView01"
+                    android:textColor="#000000"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="요청을 승인하거나 무시합니다."
+                    android:id="@+id/followTextView02"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_line2"
+            android:layout_below="@id/profile_follow"
+            android:src="@drawable/main_btn_line"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_myBehavior"
+            android:text="나의활동"
+            android:textSize="12sp"
+            android:textColor="#228FC4"
+            android:layout_below="@id/profile_line2"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="10dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_recyclerView"
+            android:layout_below="@id/profile_myBehavior"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="0dp" />
+
+    </RelativeLayout>
+</LinearLayout>
+    <FrameLayout
+        android:id="@+id/profile_navigation_container"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#ffffff">
+
+    </FrameLayout>
+</android.support.v4.widget.DrawerLayout>

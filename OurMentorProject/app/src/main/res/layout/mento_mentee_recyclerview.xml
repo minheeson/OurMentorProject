@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="#ffffff">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:src="@drawable/ic_regit_user"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:id="@+id/mentoImg_circleImgView"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="19dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mentorId_textview"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/mentoImg_circleImgView"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mentoList_line"
+            android:src="@drawable/chatting_cnt_line"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mentorMessage_textview"
+            android:background="@drawable/statusmessage"
+            android:textSize="15sp"
+            android:textColor="#ffffff"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_marginTop="25dp" />
+
+
+    </RelativeLayout>
+</LinearLayout>

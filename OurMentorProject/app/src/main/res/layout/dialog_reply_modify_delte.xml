@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffffffff">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/commentmod_modyfybox">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/commentmod_btn_modify"
+            android:id="@+id/reply_setting_modify"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="141dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:id="@+id/reply_setting_line"
+            android:src="@drawable/commentmod_modyfybox_line"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reply_setting_delete"
+            android:src="@drawable/commentmod_btn_delete"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="141dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/commentmod_cancelbox">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reply_setting_cancel"
+            android:src="@drawable/commentmod_btn_cancel"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="141dp" />
+    </LinearLayout>
+
+</LinearLayout>

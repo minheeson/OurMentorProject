@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:src="@drawable/ic_regit_user"
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:id="@+id/info_reply_circleImageView"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/info_reply_name"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="23dp"
+            android:layout_toRightOf="@id/info_reply_circleImageView"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/info_reply_content"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_below="@id/info_reply_name"
+            android:layout_alignLeft="@id/info_reply_name"
+            android:layout_alignStart="@id/info_reply_name"
+            android:layout_marginTop="10dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/info_reply_line"
+            android:src="@drawable/infocomment_cnt_line"
+            android:layout_below="@id/info_reply_content"
+            android:layout_marginTop="10dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/info_reply_date"
+            android:textSize="15sp"
+            android:textColor="#828282"
+            android:layout_alignTop="@id/info_reply_name"
+            android:layout_toRightOf="@id/info_reply_name"
+            android:layout_toEndOf="@id/info_reply_name"
+            android:layout_marginLeft="15dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

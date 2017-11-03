@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/navi_header_image"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:paddingTop="16dp"
+            android:src="@drawable/ic_regit_user"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="72dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="상태메세지"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/navi_state_msg"
+            android:singleLine="true"/>
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/navi_listview"
+        android:layout_gravity="center_horizontal"
+        android:background="#ffffff"
+        android:divider="@android:color/transparent"/>
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="select_dialog_items">
+        <item>@drawable/infoex_btn_modify</item>
+        <item>@drawable/infoex_btn_delete</item>
+    </integer-array>
+
+
+</resources>

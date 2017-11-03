@@ -1,0 +1,99 @@
+
+<android.support.design.widget.CoordinatorLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/board_all_searchLayout"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="15dp">
+            <EditText
+                android:lines="1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/board_all_searchEditText"
+                android:singleLine="true"
+                android:background="@drawable/board_searchbox"
+                android:hint="검색" />
+            <ImageView
+                android:id="@+id/board_all_search_button"
+                android:layout_width="30dp"
+                android:layout_height="28dp"
+                android:background="#228FC4"
+                android:src="@drawable/board_search"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="#ffffff"
+                android:src="@drawable/board_btn_total_p"
+
+                android:id="@+id/board_all_allBtn"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@id/board_all_searchLayout"
+                android:layout_marginLeft="8dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="#ffffff"
+                android:src="@drawable/board_btn_question_n"
+
+                android:id="@+id/board_all_questionBtn"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@id/board_all_allBtn"
+                android:layout_toEndOf="@id/board_all_allBtn"
+                android:layout_marginLeft="5dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="#ffffff"
+                android:src="@drawable/board_btn_information_n"
+                android:id="@+id/board_all_informationBtn"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@id/board_all_questionBtn"
+                android:layout_toEndOf="@id/board_all_questionBtn"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginTop="15dp"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/board_all_recyclerView"></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+
+
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/infoex_list_pen"
+        android:id="@+id/board_all_floatingBtn" />
+
+</android.support.design.widget.CoordinatorLayout>

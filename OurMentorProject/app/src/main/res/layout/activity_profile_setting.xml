@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ourmentor.ymh.lck.smh.ProfileSettingActivity">
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@drawable/main_nav_shadow">
+
+        <ImageView
+            android:src="@drawable/writing_nav_btn_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profileSetting_cancel"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="15dp" />
+
+        <ImageView
+            android:src="@drawable/writing_nav_btn_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profileSetting_ok"
+            android:layout_marginRight="27dp"
+            android:layout_marginEnd="20dp"
+            android:layout_alignTop="@+id/profileSetting_cancel"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_setting_title"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/profile_modify_title" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/profileSetting_myImg"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="57dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profileSetting_modify"
+            android:background="#ffffff"
+            android:src="@drawable/button_modifyprofile"
+            android:layout_below="@+id/profileSetting_myImg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profileSetting_line01"
+            android:layout_below="@id/profileSetting_modify"
+            android:layout_marginTop="56dp"
+            android:src="@drawable/uprofile_cnt_line"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/profileSetting_line01"
+            android:layout_centerHorizontal="true">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="이름"
+                    android:textSize="15sp"
+                    android:textColor="#010101"
+                    android:id="@+id/profileSetting_name"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/profileSetting_name_textView"
+                    android:textSize="15sp"
+                    android:textColor="#828282"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="14dp"
+                    android:lines="1"
+                    android:background="#ffffff"
+                    android:layout_weight="1"
+                    android:maxLength="10"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="상태메세지"
+                    android:textSize="15sp"
+                    android:textColor="#010101"
+                    android:id="@+id/profileSetting_stateMsg"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="14dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/profileSetting_statsMsg_editText"
+                    android:textSize="15sp"
+                    android:textColor="#828282"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="14dp"
+                    android:singleLine="true"
+                    android:background="#ffffff"
+                    android:layout_weight="1"
+                    android:maxLength="10"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/profileSetting_line02"
+                android:layout_below="@id/profileSetting_modify"
+                android:src="@drawable/uprofile_cnt_line"
+                android:layout_centerHorizontal="true" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="관 심"
+                    android:textSize="15sp"
+                    android:textColor="#010101"
+                    android:id="@+id/profileSetting_hashTag"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="14dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:background="#ffffff"
+                        android:padding="10dp"
+                        android:hint="  # 태그입력"
+                        android:textSize="17sp"
+                        android:textColorHint="#AAAAAA"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/profileSetting_hashTag01_editText"
+                        android:singleLine="true"
+
+                        android:maxLength="8"
+                        android:layout_weight="1" />
+
+                    <EditText
+                        android:background="#ffffff"
+                        android:padding="10dp"
+                        android:hint="  # 태그입력"
+                        android:textSize="17sp"
+                        android:textColorHint="#AAAAAA"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/profileSetting_hashTag02_editText"
+                        android:singleLine="true"
+
+                        android:maxLength="8"
+                        android:layout_weight="1" />
+
+                    <EditText
+                        android:background="#ffffff"
+                        android:padding="10dp"
+                        android:hint="  # 태그입력"
+                        android:textSize="17sp"
+                        android:textColorHint="#AAAAAA"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:singleLine="true"
+                        android:maxLength="8"
+                        android:id="@+id/profileSetting_hashTag03_editText"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/profileSetting_line03"
+                android:layout_below="@id/profileSetting_hashTag"
+                android:src="@drawable/uprofile_cnt_line"
+                android:layout_centerHorizontal="true" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

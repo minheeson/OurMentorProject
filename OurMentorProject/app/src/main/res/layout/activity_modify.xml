@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.ourmentor.ymh.lck.smh.modifyActivity"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@drawable/main_nav_shadow">
+
+        <ImageView
+            android:src="@drawable/writing_nav_btn_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/modify_cancel"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="15dp" />
+
+        <ImageView
+            android:src="@drawable/modify_nav_title"
+            android:layout_toRightOf="@id/modify_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/modify_title"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="109dp" />
+
+        <ImageView
+            android:src="@drawable/writing_nav_btn_done"
+            android:layout_toRightOf="@id/modify_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/modify_ok"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="109dp"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:background="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="질문글"
+                    android:buttonTint="#228FC4"
+
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+
+                    android:id="@+id/modify_checkBox_question"
+                    android:layout_marginLeft="17dp"
+                    />
+                <!-- 셀렉터를 이용해서 버튼 이미지 변경경-->
+
+                <CheckBox
+                    android:layout_toRightOf="@id/modify_checkBox_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="정보글"
+                    android:buttonTint="#228FC4"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:id="@+id/modify_checkBox_info"
+                    android:layout_marginLeft="10dp"
+                    />
+                <ImageView
+                    android:id="@+id/modify_checkBox_line"
+                    android:layout_below="@id/modify_checkBox_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/main_btn_line" />
+            </RelativeLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:hint="  제목"
+                android:textColorHint="#AAAAAA"
+                android:textSize="17sp"
+                android:background="#ffffff"
+
+                android:id="@+id/modify_editText_title" />
+
+            <ImageView
+                android:id="@+id/modify_editText_title_line"
+                android:layout_below="@id/modify_editText_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/main_btn_line" />
+
+            <EditText
+                android:background="#ffffff"
+                android:padding="10dp"
+                android:hint="  내용을 입력해주세요."
+
+                android:gravity="start"
+                android:layout_width="match_parent"
+                android:layout_height="222dp"
+                android:id="@+id/modify_editText_content"
+                android:textSize="17sp"
+                android:textColorHint="#AAAAAA"/>
+
+            <ImageView
+                android:id="@+id/modify_editTex_content_line"
+                android:layout_below="@id/modify_editText_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/main_btn_line" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:background="#ffffff"
+                    android:padding="10dp"
+                    android:hint="  # 태그입력"
+                    android:textSize="17sp"
+                    android:textColorHint="#AAAAAA"
+                    android:singleLine="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/modify_editText_hashTag01"
+                    android:layout_weight="1" />
+
+                <EditText
+                    android:background="#ffffff"
+                    android:padding="10dp"
+                    android:hint="  # 태그입력"
+                    android:textSize="17sp"
+                    android:textColorHint="#AAAAAA"
+                    android:singleLine="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/modify_editText_hashTag02"
+                    android:layout_weight="1" />
+
+                <EditText
+                    android:background="#ffffff"
+                    android:padding="10dp"
+                    android:hint="  # 태그입력"
+                    android:textSize="17sp"
+                    android:textColorHint="#AAAAAA"
+                    android:singleLine="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/modify_editText_hashTag03"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/modify_editText_hashTag_line"
+                android:layout_below="@id/modify_editText_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/main_btn_line" />
+
+            <TextView
+                android:background="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="디렉토리 선택"
+                android:layout_marginLeft="18dp"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:id="@+id/modify_textView_category" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/modify_spinner_category"
+                android:layout_marginLeft="18dp"
+                android:prompt="@string/spinnerPrompt"
+                android:background="@drawable/writing_direcbox"
+                android:popupBackground="#ffffff"
+                />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/modify_spinner_detail_category"
+                android:background="@drawable/writing_direcbox"
+                android:popupBackground="#ffffff"
+                android:layout_marginLeft="18dp"
+                android:visibility="invisible"/>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

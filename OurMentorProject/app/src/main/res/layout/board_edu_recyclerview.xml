@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/board_edu_Icon"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:ems="18"
+        android:ellipsize="end"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:id="@+id/board_edu_Title"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/board_edu_Icon"
+        android:layout_toEndOf="@id/board_edu_Icon"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="#828282"
+        android:ems="20"
+        android:lines="2"
+        android:ellipsize="end"
+        android:id="@+id/board_edu_Content"
+        android:layout_below="@id/board_edu_Icon"
+        android:layout_alignLeft="@id/board_edu_Icon"
+        android:layout_alignStart="@id/board_edu_Icon"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="#228FC4"
+        android:id="@+id/board_edu_HashTag01"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/board_edu_Content"
+        android:layout_alignLeft="@id/board_edu_Content"
+        android:layout_alignStart="@id/board_edu_Content"
+        android:layout_marginTop="7dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="#228FC4"
+        android:id="@+id/board_edu_HashTag02"
+        android:layout_marginLeft="10dp"
+        android:layout_alignBottom="@id/board_edu_HashTag01"
+        android:layout_toRightOf="@id/board_edu_HashTag01"
+        android:layout_marginTop="7dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="#228FC4"
+        android:id="@+id/board_edu_HashTag03"
+        android:layout_marginLeft="10dp"
+        android:layout_alignBottom="@id/board_edu_HashTag02"
+        android:layout_toRightOf="@id/board_edu_HashTag02"
+        android:layout_marginTop="7dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="답변"
+        android:textSize="13sp"
+        android:textColor="#828282"
+        android:id="@+id/board_edu_Reply"
+        android:layout_below="@id/board_edu_HashTag01"
+        android:layout_alignLeft="@id/board_edu_HashTag01"
+        android:layout_alignStart="@id/board_edu_HashTag01"
+        android:layout_marginTop="9dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/board_edu_ReplyNo"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/board_edu_Reply"
+        android:layout_alignTop="@id/board_edu_Reply"
+        />
+
+    <ImageView
+        android:id="@+id/board_edu_line1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/main_list_part"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/board_edu_ReplyNo"
+        android:layout_alignTop="@id/board_edu_ReplyNo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="좋아요"
+        android:textSize="13sp"
+        android:textColor="#828282"
+        android:id="@+id/board_edu_Like"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/board_edu_line1"
+        android:layout_alignTop="@id/board_edu_line1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/board_edu_LikeNo"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/board_edu_Like"
+        android:layout_alignTop="@id/board_edu_Like"
+        />
+
+    <ImageView
+        android:id="@+id/board_edu_line2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/main_list_part"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/board_edu_LikeNo"
+        android:layout_alignTop="@id/board_edu_LikeNo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/board_edu_Category"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/board_edu_line2"
+        android:layout_alignTop="@id/board_edu_line2"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" ,"
+        android:id="@+id/board_edu_comma"
+        android:layout_toRightOf="@id/board_edu_Category"
+        android:layout_alignTop="@id/board_edu_Category"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/board_edu_Detail_category"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/board_edu_comma"
+        android:layout_alignTop="@id/board_edu_Category"
+        />
+
+    <ImageView
+        android:id="@+id/board_edu_line3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/main_list_part"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/board_edu_Detail_category"
+        android:layout_alignTop="@id/board_edu_Detail_category"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/board_edu_Time"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/board_edu_line3"
+        android:layout_alignTop="@id/board_edu_line3"
+        />
+
+    <ImageView
+        android:id="@+id/board_edu_bottom_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/main_list_line"
+        android:layout_below="@id/board_edu_Reply"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"/>
+</RelativeLayout>

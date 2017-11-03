@@ -1,0 +1,68 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a0000000"
+    android:id="@+id/chatting_profile_framelayout"
+    tools:context="com.ourmentor.ymh.lck.smh.fragment.ChattingProfileFragment"
+    android:clickable="true">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:background="@drawable/chatting_profile_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chatting_profile_textView_id"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginTop="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textColor="#828282"
+            android:id="@+id/chatting_profile_textView_state"
+            android:layout_below="@+id/chatting_profile_textView_id"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/chatting_profile_btn_chatting"
+            android:id="@+id/chatting_profile_btn_chatting"
+            android:layout_below="@+id/chatting_profile_textView_state"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="69dp"
+            android:layout_marginTop="31dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/chatting_profile_btn_lprofile"
+            android:id="@+id/chatting_profile_btn_lprofile"
+            android:layout_alignTop="@+id/chatting_profile_btn_chatting"
+            android:layout_toRightOf="@+id/chatting_profile_btn_chatting"
+            android:layout_toEndOf="@+id/chatting_profile_btn_chatting"
+            android:layout_marginLeft="23dp" />
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:src="@drawable/ic_regit_user"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:id="@+id/chatting_profile_img"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="170dp" />
+</FrameLayout>

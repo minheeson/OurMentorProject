@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="#ffffff">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:src="@drawable/ic_regit_user"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:id="@+id/mento_request_Img_circleImgView"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="19dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mento_request_Id_textview"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/mento_request_Img_circleImgView"
+            android:text="asdfkljkasld" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mento_request_list_line"
+            android:src="@drawable/main_btn_line"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mento_request_accept"
+            android:src="@drawable/writing_nav_btn_done"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="26dp"
+            android:layout_marginEnd="26dp" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mento_request_reject"
+            android:src="@drawable/writing_nav_btn_clear"
+            android:layout_alignTop="@id/mento_request_accept"
+            android:layout_toLeftOf="@id/mento_request_accept"
+            android:layout_toStartOf="@id/mento_request_accept"
+            android:layout_marginRight="24dp"
+            android:layout_marginEnd="24dp" />
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+</LinearLayout>
